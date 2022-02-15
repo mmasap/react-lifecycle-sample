@@ -12,7 +12,7 @@ const MainHeader = () => {
               className={(navData) => (navData.isActive ? classes.active : '')}
               to='/'
             >
-              LifeCycle
+              Lifecycle
             </NavLink>
           </li>
           <li>
