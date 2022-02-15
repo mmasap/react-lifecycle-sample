@@ -21,7 +21,3 @@ function App() {
 }
 
 export default App;
-
-// our-domain.com/welcome => Welcome Component
-// our-domain.com/products => Products Component
-// our-domain.com/product-detail/a-book
