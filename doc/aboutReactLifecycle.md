@@ -4,9 +4,13 @@
 
 1. [React の状態の種類](#reactの状態の種類)
 2. [各ページのライフサイクルについて](#各ページのライフサイクルについて)
-3. [実行時画像](#実行時画像)
+3. [実行時画像](#処理の流れ)
 
 - [ソースコード](https://github.com/mmasap/react-lifecycle-sample)
+  - 実行手順
+  1. `npm i`
+  2. `npm build`
+  3. `npm start` 
 
 ## React の状態の種類
 
