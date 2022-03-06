@@ -14,9 +14,9 @@
 
 ## React の状態の種類
 
-- マウント: DOM として描画されるとき
-- 更新: DOM が再描画されるとき
-- アンマウント: DOM が削除されるとき
+- componentDidMount: DOM として描画されるとき
+- componentDidUpdate: DOM が再描画されるとき
+- componentWillUnmount: DOM が削除されるとき
 
 ## 各ページのライフサイクルについて
 
@@ -69,22 +69,18 @@ useEffect(() => {
 }, []); // マウント時のみ実行
 ```
 
-## 処理の流れ
+### Lifecycle.js　
 
-Lifecycle.js mount => Lifecycle.js update => Lifecycle.js unmount => Timer.js update => Timer.js unmoount
-
-### Lifecycle.js
-
-初回表示
-![Lifecycle.js mount](./pics/1.png)
-"count up"ボタン押下
-![Lifecycle.js update](./pics/2.png)
-"Fetch.js"にページ遷移
-![Lifecycle.js unmount](./pics/3.png)
+初回表示(componentDidMount)
+![Lifecycle.js componentDidMount](./pics/1.png)
+"count up"ボタン押下(componentDidUpdate)
+![Lifecycle.js componentDidUpdate](./pics/2.png)
+"Fetch.js"にページ遷移(componentWillUnmount)
+![Lifecycle.js componentWillUnmount](./pics/3.png)
 
 ### Tiemr.js
 
-初回表示
-![Timer.js update](./pics/4.png)
-"Lifecycle"ページに画面遷移
-![Timer.js unmount](./pics/5.png)
+初回表示, 時間経過(componentDidMount, componentDidUpdate)
+![Timer.js componentDidMount,componentDidUpdate](./pics/4.png)
+"Lifecycle"ページに画面遷移(componentWillUnmount)
+![Timer.js componentWillUnmount](./pics/5.png)
