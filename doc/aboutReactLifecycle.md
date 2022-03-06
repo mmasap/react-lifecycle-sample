@@ -60,7 +60,7 @@ clearInterval 処理をコメントアウトした場合に、Timer 画面から
 
 ```js
 useEffect(() => {
-  interval = setInterval(() => {
+  const interval = setInterval(() => {
     console.log('updateTimer');
     setTimer(new Date()); // ステートを更新
   }, 1000);
