@@ -9,8 +9,7 @@
 - [ソースコード](https://github.com/mmasap/react-lifecycle-sample)
   - 実行手順
   1. `npm i`
-  2. `npm build`
-  3. `npm start` 
+  2. `npm start` 
 
 ## React の状態の種類
 
