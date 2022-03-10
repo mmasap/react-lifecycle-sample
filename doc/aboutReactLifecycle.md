@@ -59,12 +59,16 @@ clearInterval 処理をコメントアウトした場合に、Timer 画面から
 
 ```js
 useEffect(() => {
+  console.log('setInterval');
   const interval = setInterval(() => {
     console.log('updateTimer');
     setTimer(new Date()); // ステートを更新
   }, 1000);
 
-  return () => clearInterval(interval); // アンマウント時に呼び出し
+  return () => {
+    console.log('clearInterval');
+    clearInterval(interval); // アンマウント時に呼び出し
+  }
 }, []); // マウント時のみ実行
 ```
 
