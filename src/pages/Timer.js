@@ -4,7 +4,7 @@ const Timer = () => {
   const [timer, setTimer] = useState(new Date());
 
   useEffect(() => {
-    console.log('setInterval');
+    console.log('setInterval!!!!');
     const interval = setInterval(() => {
       console.log('updateTimer');
       setTimer(new Date());
